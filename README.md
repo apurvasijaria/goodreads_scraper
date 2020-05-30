@@ -17,7 +17,7 @@ Extracts information of books on a user's particular shelf
 - Date published
 
 #### Information that needs to be updated in code:
-- **g_id**: Goodreads ID of the user (Example: )
+- **g_id**: Goodreads ID of the user (Example: 12345-firstname-lastname )
 - **g_shelf**: shelf name 
   - Common shelves:
     - **Read**: 'read'
