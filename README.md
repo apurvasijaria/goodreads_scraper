@@ -1,5 +1,5 @@
 # goodreads_scraping
-Codes to scrape information about reader's shelf, books stats, reviews, author's info etc. using Beautiful Soup
+Codes to scrape information about [Goodreads](https://www.goodreads.com/) reader's shelf, books stats, reviews, author's info etc. using Beautiful Soup
 
 ## Code 1: shelf_scrape.py
 
