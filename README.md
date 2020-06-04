@@ -1,14 +1,14 @@
 # goodreads_scraper
 Codes to scrape information about [Goodreads](https://www.goodreads.com/) reader's shelf, books stats, reviews, author's info etc. using Beautiful Soup
 
-### Modules:
+## Modules:
 - __shelf_scrape.py__ : Extracts information of all book on a user's particular shelf.
 - __author_scrape.py__: Extracts infomation about the author, books by the author, quotes by the author.
 - __books_scrape.py__: Extracts information about the book and quotes from the book (other information like similar books, highlights etc WIP)
 
-### Module 1: shelf_scrape.py
+## Module 1: shelf_scrape.py
 
-#### *books_on_shelf*
+### *books_on_shelf*
 Extracts information of all the books on a user's particular shelf
 
 ###### Information extracted:
@@ -45,9 +45,9 @@ books_on_shelf(user_id,shelf_name,books)
     - example: 'english-literature'/'kindle'/'audiobooks' etc
 - **book_count**: optional argument, default value =1000
     
-### Module 2: author_scrape.py
+## Module 2: author_scrape.py
 
-#### *about_author*
+### *about_author*
 Extracts all Quotes by the Author
 
 ###### Information extracted:
@@ -65,7 +65,7 @@ about_author(a_id)
 ###### Arguments for about_author:
 - **a_id**: Goodreads ID of the Author (Example: 12345-firstname-lastname )
 
-#### *books_by_author*
+### *books_by_author*
 Extracts information of all the books by an Author
 
 ###### Information extracted:
@@ -89,7 +89,7 @@ books_by_author(a_id,books)
 - **a_id**: Goodreads ID of the Author (Example: 12345-firstname-lastname )
 - **book_count**: optional argument, default value =500
 
-#### *quotes_by_author*
+### *quotes_by_author*
 Extracts all Quotes by the Author
 
 ###### Information extracted:
