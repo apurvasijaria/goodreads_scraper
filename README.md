@@ -26,7 +26,7 @@ Extracts information of all the books on a user's particular shelf
 import books_on_shelf from shelf_scrape
 
 #define userid and shelf name
-g_id = '1234-firstname-lastname'
+g_id = '42442765-apurva-sijaria' #'1234-firstname-lastname'
 g_shelf = 'to-read'
 books = 2000 #optional argument, need to be updated if book_count>1000)
 books_on_shelf(user_id,shelf_name,books)
@@ -51,19 +51,19 @@ books_on_shelf(user_id,shelf_name,books)
 Extracts all information about the Author
 
 ###### Information extracted:
-- Information Type (Date of Birth, Twitter ID, Website etc. as per availability on Goodread's book page)
+- Information Type (Date of Birth, Twitter ID, Website etc. as per availability on Author's Goodreads page)
 - Information Value
 
 ```python
 import about_author from author_scrape
 
 #define Author ID
-a_id = '1234.firstname-lastname'
+a_id = '3472.Margaret_Atwood' #'1234.firstname_lastname'
 about_author(a_id)
 ```
 
 ###### Arguments for about_author:
-- **a_id**: Goodreads ID of the Author (Example: 12345-firstname-lastname )
+- **a_id**: Goodreads ID of the Author from Goodreads Page URL (Example: 1234.firstname_lastname )
 
 ### *books_by_author*
 Extracts information of all the books by an Author
@@ -80,13 +80,13 @@ Extracts information of all the books by an Author
 import books_by_author from author_scrape
 
 #define author ID and book count
-a_id = '1234.firstname-lastname'
+a_id = '3472.Margaret_Atwood' #'1234.firstname_lastname'
 books = 2000 #optional argument, need to be updated if book_count>500)
 books_by_author(a_id,books)
 ```
 
 ###### Arguments for books_by_author:
-- **a_id**: Goodreads ID of the Author (Example: 12345-firstname-lastname )
+- **a_id**:  Goodreads ID of the Author from Goodreads Page URL (Example: 1234.firstname_lastname )
 - **book_count**: optional argument, default value =500
 
 ### *quotes_by_author*
@@ -95,19 +95,18 @@ Extracts all Quotes by the Author
 ###### Information extracted:
 - Quote
 - Author name and Book Title
-- Average Rating on Goodreads
 - Total Likes on the quote
 
 ```python
 import quotes_by_author from author_scrape
 
 #define Author ID
-a_id = '1234.firstname-lastname'
+a_id = '3472.Margaret_Atwood' #'1234.firstname_lastname'
 quotes_by_author(a_id)
 ```
 
 ###### Arguments for quotes_by_author:
-- **a_id**: Goodreads ID of the Author (Example: 12345-firstname-lastname )
+- **a_id**: Goodreads ID of the Author from Goodreads Page URL (Example: 1234.firstname_lastname )
 
 ## Module 3: books_scrape.py
 
@@ -115,19 +114,19 @@ quotes_by_author(a_id)
 Extracts all information about a book
 
 ###### Information extracted:
-- Information Type (ISBN, Date Published, Editions, Number of Pages etc. as per availability on Goodread's book page)
+- Information Type (ISBN, Date Published, Editions, Number of Pages etc. as per availability on the Book's Goodreads page)
 - Information Value
 
 ```python
 import about_book from books_scrape
 
 #define Book ID
-b_id = '1234.bookname'
+b_id = '38447.The_Handmaid_s_Tale' #example
 about_book(b_id)
 ```
 
-###### Arguments for about_author:
-- **b_id**: Goodreads ID of the Book from page url 
+###### Arguments for about_book:
+- **b_id**: Goodreads ID of the Book from book's main page url 
 
 ### *quotes_from_book*
 Extracts all quotes about a book
@@ -141,12 +140,12 @@ Extracts all quotes about a book
 import quotes_from_book from books_scrape
 
 #define Book ID
-b_id = '1234.bookname'
+b_id = '1119185-the-handmaid-s-tale'
 quotes_from_book(b_id)
 ```
 
-###### Arguments for about_author:
-- **b_id**: Goodreads ID of the Book from quotes page url 
+###### Arguments for quotes_from_book:
+- **b_id**: Goodreads ID of the Book from book's quotes page url 
 
 ## Resources:
 
