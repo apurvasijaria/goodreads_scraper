@@ -2,7 +2,7 @@
 Codes to scrape information about [Goodreads](https://www.goodreads.com/) reader's shelf, books stats, reviews, author's info etc. using Beautiful Soup
 
 ## Modules:
-- __shelf_scrape.py__ : Extracts information of all book on a user's particular shelf.
+- [__shelf_scrape.py__](#Module-1:-shelf_scrape.py) : Extracts information of all book on a user's particular shelf.
 - __author_scrape.py__: Extracts infomation about the author, books by the author, quotes by the author.
 - __books_scrape.py__: Extracts information about the book and quotes from the book (other information like similar books, highlights etc WIP)
 
