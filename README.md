@@ -3,8 +3,15 @@ Codes to scrape information about [Goodreads](https://www.goodreads.com/) reader
 
 ## Modules:
 - __[shelf_scrape.py](#module-1-shelf_scrapepy)__ : Extracts information of all book on a user's particular shelf.
+    <br /> - _[books_on_shelf](#books_on_shelf)_
 - __[author_scrape.py](#module-2-author_scrapepy)__: Extracts infomation about the author, books by the author, quotes by the author.
+ <br /> - _[about_author](#about_author)_
+ <br /> - _[books_by_author](#books_by_author)_
+ <br /> - _[quotes_by_author](#quotes_by_author)_
 - __[books_scrape.py](#module-3-books_scrapepy)__: Extracts information about the book and quotes from the book (other information like similar books, highlights etc WIP)
+ <br /> - _[about_book](#about_book)_
+ <br /> - _[quotes_from_book](#quotes_from_book)_
+ 
 
 ## Module 1: shelf_scrape.py
 
