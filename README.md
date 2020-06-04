@@ -48,10 +48,10 @@ books_on_shelf(user_id,shelf_name,books)
 ## Module 2: author_scrape.py
 
 ### *about_author*
-Extracts all Quotes by the Author
+Extracts all information about the Author
 
 ###### Information extracted:
-- Information Type
+- Information Type (Date of Birth, Twitter ID, Website etc. as per availability on Goodread's book page)
 - Information Value
 
 ```python
@@ -109,8 +109,44 @@ quotes_by_author(a_id)
 ###### Arguments for quotes_by_author:
 - **a_id**: Goodreads ID of the Author (Example: 12345-firstname-lastname )
 
+## Module 3: books_scrape.py
 
-## Documentation : WIP
+### *about_book*
+Extracts all information about a book
+
+###### Information extracted:
+- Information Type (ISBN, Date Published, Editions, Number of Pages etc. as per availability on Goodread's book page)
+- Information Value
+
+```python
+import about_book from books_scrape
+
+#define Book ID
+b_id = '1234.bookname'
+about_book(b_id)
+```
+
+###### Arguments for about_author:
+- **b_id**: Goodreads ID of the Book from page url 
+
+### *quotes_from_book*
+Extracts all quotes about a book
+
+###### Information extracted:
+- Quote
+- Author name and Book Title
+- Total Likes on the quote
+
+```python
+import quotes_from_book from books_scrape
+
+#define Book ID
+b_id = '1234.bookname'
+quotes_from_book(b_id)
+```
+
+###### Arguments for about_author:
+- **b_id**: Goodreads ID of the Book from quotes page url 
 
 ## Resources:
 
