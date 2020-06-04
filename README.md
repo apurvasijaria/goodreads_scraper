@@ -1,4 +1,4 @@
-# goodreads_scraping
+# goodreads_scraper
 Codes to scrape information about [Goodreads](https://www.goodreads.com/) reader's shelf, books stats, reviews, author's info etc. using Beautiful Soup
 
 ### Modules:
@@ -25,8 +25,8 @@ Extracts information of all the books on a user's particular shelf
 import books_on_shelf from shelf_scrape
 
 #define userid and shelf name
-user_id = '1234-firstname-lastname'
-shelf_name = 'to-read'
+g_id = '1234-firstname-lastname'
+g_shelf = 'to-read'
 book_count = 2000 #optional argument, need to be updated if book_count>1000)
 books_on_shelf(user_id,shelf_name,book_count)
 ```
