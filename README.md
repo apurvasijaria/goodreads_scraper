@@ -36,7 +36,7 @@ import books_on_shelf from shelf_scrape
 g_id = '42442765-apurva-sijaria' #'1234-firstname-lastname'
 g_shelf = 'to-read'
 books = 2000 #optional argument, need to be updated if book_count>1000)
-books_on_shelf(user_id,shelf_name,books)
+books_on_shelf(g_id,g_shelf,books)
 ```
 
 ###### Arguments for books_on_shelf:
@@ -136,7 +136,7 @@ about_book(b_id)
 - **b_id**: Goodreads ID of the Book from book's main page url 
 
 ### *quotes_from_book*
-Extracts all quotes about a book
+Extracts all quotes from a book
 
 ###### Information extracted:
 - Quote
