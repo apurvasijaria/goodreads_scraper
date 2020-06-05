@@ -12,6 +12,16 @@ Codes to scrape information about [Goodreads](https://www.goodreads.com/) reader
  <br /> - _[about_book](#about_book)_
  <br /> - _[quotes_from_book](#quotes_from_book)_
  
+## Requirements
+```python
+from bs4 import BeautifulSoup
+import requests
+import pandas as pd
+import datetime
+import os
+import time
+import re
+```
 
 ## Module 1: shelf_scrape.py
 
